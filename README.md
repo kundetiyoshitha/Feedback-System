@@ -4,6 +4,11 @@ A full-stack feedback management web app with real-time sentiment analysis.
 
 ---
 
+## 🎥 Demo
+[Click here to watch the demo](https://youtube.com/your-link)
+
+---
+
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
@@ -28,19 +33,21 @@ Make sure you have these installed before running:
 
 ### Step 1 — Download the project
 
-Click **Code → Download ZIP** on GitHub, extract it, and open the folder.
+Click **Code → Download ZIP** on GitHub, extract it, and open the folder in VS Code.
 
 ---
 
-### Step 2 — Setup Backend
+### Step 2 — Setup & Run Backend
 
-Open a terminal inside the `backend` folder and run:
+Open a terminal and run:
 
 ```
+cd backend
 npm install
+node server.js
 ```
 
-Then create a `.env` file inside `backend/` with this content:
+Create a `.env` file inside the `backend/` folder with this content:
 
 ```
 PORT=5000
@@ -50,26 +57,41 @@ DB_PASSWORD=your_mysql_password
 DB_NAME=feedback_db
 ```
 
-Then start the backend:
+✅ Backend runs on → http://localhost:5000
 
+You should see:
 ```
-node server.js
+🚀 Server running on http://localhost:5000
 ```
-
-Backend runs on → http://localhost:5000
 
 ---
 
-### Step 3 — Setup Frontend
+### Step 3 — Setup & Run Frontend
 
-Open a **new terminal** inside the `frontend` folder and run:
+Open a **new terminal** and run:
 
 ```
+cd frontend
 npm install
 npm run dev
 ```
 
-Frontend runs on → http://localhost:5173
+✅ Frontend runs on → http://localhost:5173
+
+You should see:
+```
+Local: http://localhost:5173
+```
+
+---
+
+### Step 4 — Open the app
+
+Go to your browser and open:
+
+```
+http://localhost:5173
+```
 
 > ✅ Works on Windows, Mac, and Linux
 
@@ -121,3 +143,4 @@ feedback-system/
 | GET | /api/feedback/analytics | Get sentiment analytics |
 
 ---
+
